@@ -1,0 +1,12 @@
+[
+  {
+    "name": "11",
+    "request": {
+      "url": "/demo"
+    },
+    "response": {
+      "test":"返回的信息",
+      "name": "张三"
+    }
+  }
+]

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="1">
+    <test name="2">
+        <classes>
+            <class name="com.testng.extend.demo.DemoTest1">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.testng.extend.demo.ExtentTestNGIReporterListenerOld"/>
+    </listeners>
+
+</suite>
