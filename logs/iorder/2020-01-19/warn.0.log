@@ -1,0 +1,4 @@
+[WARN ] 2020-01-19 16:08:07 [http-nio-8888-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public int com.course.controller.Demo.test2(com.course.model.User)
+[WARN ] 2020-01-19 16:08:07 [http-nio-8888-exec-8] o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+[WARN ] 2020-01-19 16:11:06 [http-nio-8888-exec-2] o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+[WARN ] 2020-01-19 16:11:06 [http-nio-8888-exec-3] o.s.web.servlet.PageNotFound - Request method 'POST' not supported

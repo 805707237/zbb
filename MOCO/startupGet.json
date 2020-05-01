@@ -1,0 +1,71 @@
+[
+  {
+    "description": "模拟一个没有参数的Get请求",
+    "request":{
+  "uri": "/getdemo",
+  "method": "get"
+    },
+    "response": {
+      "headers":{ "Content-Type":"text/html;charset=gbk" },
+      "text":"没有参数的get请求"
+    }
+  },
+
+
+  {
+    "description": "模拟有一个有参数的Get请求",
+    "request": {
+      "uri": "/get2demo",
+      "method": "get",
+      "queries": {
+        "name": "zhangsan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers":{"Content-Type": "text/html;charset=gbk"},
+      "text":"有参数的get请求"
+    }
+  },
+
+  {
+    "description": "一个有cookie的get请求",
+    "request": {
+      "uri": "/getcookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers":{"Content-Type": "text/html;charset=gbk"},
+      "text": "一个没有参数，需要cookie才能访问的get请求"
+    }
+  },
+
+
+  {
+    "description": "重定向到百度",
+    "request":{
+      "uri": "/zbb",
+      "method": "get"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+
+  {
+    "description": "返回一个有cookie信息的请求",
+    "request": {
+      "uri": "/getcookie2",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "cookie获取成功"
+      }
+    }
+  }
+]

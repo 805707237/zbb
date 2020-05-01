@@ -1,0 +1,91 @@
+[DEBUG] 2020-04-28 10:56:45 [main] com.course.dao.UserDao.countUser - ==>  Preparing: select count(*) from user; 
+[DEBUG] 2020-04-28 10:56:45 [main] com.course.dao.UserDao.countUser - ==> Parameters: 
+[DEBUG] 2020-04-28 10:56:45 [main] com.course.dao.UserDao.countUser - <==      Total: 1
+[DEBUG] 2020-04-28 16:21:28 [main] com.course.dao.UserDao.addUser - ==>  Preparing: insert into user (id,name,age,max,password) values (?,?,?,?,?); 
+[DEBUG] 2020-04-28 16:21:28 [main] com.course.dao.UserDao.addUser - ==> Parameters: 10(Integer), 张三(String), 10(String), 男(String), 10086(String)
+[DEBUG] 2020-04-28 16:21:28 [main] com.course.dao.UserDao.addUser - <==    Updates: 1
+[DEBUG] 2020-04-28 16:35:32 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=18357876141; 
+[DEBUG] 2020-04-28 16:35:32 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 
+[DEBUG] 2020-04-28 16:39:44 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 16:39:44 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 18357876141(String)
+[DEBUG] 2020-04-28 16:41:28 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 16:41:28 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 18357876141(String)
+[DEBUG] 2020-04-28 16:41:28 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 16:58:39 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 16:58:39 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 18357876141(String)
+[DEBUG] 2020-04-28 16:58:39 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 16:59:52 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 16:59:52 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 18357876141(String)
+[DEBUG] 2020-04-28 16:59:52 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:03:30 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:03:30 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 18357876141(String)
+[DEBUG] 2020-04-28 17:03:30 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:08:22 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:08:22 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:08:22 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:11:12 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:11:12 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:11:12 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:11:33 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:11:33 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:11:33 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:11:46 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:11:46 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:11:46 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:28:46 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:28:46 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:28:46 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:36:28 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:36:28 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:36:28 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:37:13 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:37:13 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:37:13 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:38:42 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:38:42 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:38:42 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:39:48 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:39:48 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:39:48 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:41:32 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:41:32 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:41:32 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:42:13 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:42:13 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:42:13 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:54:53 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:54:53 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:54:53 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:55:41 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:55:41 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:55:41 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 17:58:02 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 17:58:02 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 17:58:02 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 18:12:19 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 18:12:19 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 18:12:19 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 18:16:27 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 18:16:27 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 18:16:27 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 18:26:27 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 18:26:27 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 18:26:27 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 18:26:40 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 18:26:40 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 18:26:40 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 18:29:27 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 18:29:27 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 18:29:27 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 18:32:48 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 18:32:48 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 18:32:48 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 18:34:19 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 18:34:19 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 18:34:19 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 19:16:43 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 19:16:43 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 19:16:43 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-04-28 19:17:54 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-28 19:17:54 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-28 19:17:54 [main] com.course.dao.UserDao.getUsers - <==      Total: 1

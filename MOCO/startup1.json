@@ -1,12 +1,12 @@
 [
   {
-    "name": "11",
+    "description": "11",
     "request": {
-      "url": "/demo"
+      "uri": "/demo"
     },
     "response": {
-      "test":"返回的信息",
-      "name": "张三"
+      "headers":{ "Content-Type":"text/html;charset=gbk" },
+      "text":"返回的信息aaaaaaaaa11111111111111111111111111"
     }
   }
 ]

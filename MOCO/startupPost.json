@@ -1,0 +1,92 @@
+[
+  {
+    "description": "这是一个没有参数的POST请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response":{
+    "headers":{ "Content-Type":"text/html;charset=gbk" },
+    "text": "这是没有参数的POST请求"
+    }
+  },
+
+  {
+    "description": "有参数的POST请求",
+    "request": {
+      "uri": "/postdemo2",
+      "method": "post",
+      "forms":{
+        "name":"zbb",
+        "age": "11"
+      }
+    },
+    "response": {
+      "headers":{ "Content-Type":"text/html;charset=gbk" },
+      "text": "这是有参数的POST请求"
+    }
+  },
+
+  {
+    "description": "这是有个有cookie的Post请求",
+    "request": {
+      "uri": "/postcookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zbbb",
+        "age": "14"
+      }
+    },
+    "response": {
+      "headers":{ "Content-Type":"text/html;charset=gbk" },
+      "json":{
+        "name": "haha",
+        "sge": "111"
+      }
+    }
+  },
+
+  {
+    "description": "这是一个带请求头和cookie的post请求",
+    "request": {
+      "uri": "/headerpost",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zbb",
+        "sex": "man"
+      }
+    },
+    "response": {
+      "headers":{ "Content-Type":"text/html;charset=gbk" },
+      "json": {
+        "name": "赵彬彬",
+        "sex": "16"
+      }
+    }
+  },
+
+  {
+    "description": "返回一个有cookie信息的请求",
+    "request": {
+      "uri": "/getcookie2",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "cookie获取成功"
+      }
+    }
+  }
+]

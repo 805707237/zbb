@@ -1,0 +1,3 @@
+[DEBUG] 2020-04-30 14:45:28 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-04-30 14:45:28 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-04-30 14:45:28 [main] com.course.dao.UserDao.getUsers - <==      Total: 1

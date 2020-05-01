@@ -1,0 +1,4 @@
+[INFO ] 2020-04-28 10:56:45 [main] com.course.lemuji.yyScript - 打印日志123
+[INFO ] 2020-04-28 17:58:02 [main] com.course.lemuji.yyScript - 登录成功
+[INFO ] 2020-04-28 18:29:27 [main] com.course.lemuji.yyScript - {"addr":"https://toper.lemuji.com","token":"b04e2da8c978306cd1e353ec1661194e45d9f0e9d23fa0a6320108e8068940a5"}
+[INFO ] 2020-04-28 18:32:48 [main] com.course.lemuji.yyScript - 0e1bfacda771ce0050de941a41ea3bd8d527c5b968e753a822acad6af5309770

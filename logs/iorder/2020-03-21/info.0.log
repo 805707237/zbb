@@ -1,0 +1,15 @@
+[INFO ] 2020-03-21 13:55:32 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 8408 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-21 13:55:32 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-21 13:55:32 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3dbc2c: startup date [Sat Mar 21 13:55:32 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-21 13:55:32 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-21 13:55:32 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-21 13:55:32 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-21 13:55:32 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2320 ms
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-21 13:55:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]

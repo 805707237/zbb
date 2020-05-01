@@ -1,0 +1,433 @@
+[INFO ] 2020-03-28 15:24:23 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 34992 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 15:24:23 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 15:24:23 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 15:24:23 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 15:24:23 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 15:24:23 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 15:24:23 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 15:24:23 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1879 ms
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 15:24:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 15:24:23 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateUser],methods=[POST]}" onto public int com.course.controller.Demo.test3(com.course.model.User)
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 15:24:23 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 15:24:23 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 15:24:23 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 15:24:23 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 15:24:23 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 15:24:23 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 15:24:23 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 15:24:23 [main] com.course.Application - Started Application in 4.082 seconds (JVM running for 5.602)
+[INFO ] 2020-03-28 15:24:23 [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-03-28 15:24:23 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-03-28 15:24:23 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+[INFO ] 2020-03-28 15:24:23 [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-03-28 15:24:23 [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-03-28 20:48:28 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 38860 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:48:28 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:48:28 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13b2ea6: startup date [Sat Mar 28 20:48:28 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:48:28 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:48:28 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:48:28 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:48:28 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1446 ms
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:48:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:48:28 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:49:13 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 22516 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:49:13 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:49:13 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:49:13 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:49:13 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:49:13 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:49:13 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:49:13 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1287 ms
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:13 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:13 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:49:45 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 39820 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:49:45 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:49:45 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:49:45 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:49:45 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:49:45 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:49:45 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:49:45 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1268 ms
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:49:45 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:50:32 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 37964 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:50:32 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:50:32 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:50:32 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:50:32 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:50:32 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:50:32 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:50:32 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1242 ms
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:50:32 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:50:32 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:51:49 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 39888 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:51:49 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:51:49 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:51:49 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:51:49 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:51:49 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:51:49 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:51:49 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1415 ms
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:51:49 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:51:49 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:52:11 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 37160 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:52:11 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:52:11 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:52:11 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:52:11 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:52:11 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:52:11 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:52:11 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1415 ms
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:52:11 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:52:11 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:53:29 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 37828 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:53:29 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:53:29 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:53:29 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:53:29 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:53:29 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:53:29 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:53:29 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1304 ms
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:29 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:53:55 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 27988 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:53:55 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:53:55 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:53:55 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:53:55 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:53:55 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:53:55 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:53:55 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1273 ms
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:55 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:53:55 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:53:55 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:53:55 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 20:53:55 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 20:53:55 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 20:53:55 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:53:55 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 20:53:55 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 20:53:55 [main] com.course.Application - Started Application in 2.823 seconds (JVM running for 3.705)
+[INFO ] 2020-03-28 20:55:23 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 31616 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:55:23 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:55:23 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:55:23 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:55:23 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:55:23 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:55:23 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:55:23 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1222 ms
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:23 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2020-03-28 20:55:37 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 15944 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:55:37 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:55:37 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13b2ea6: startup date [Sat Mar 28 20:55:37 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:55:37 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:55:37 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:55:37 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:55:37 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1275 ms
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:37 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13b2ea6: startup date [Sat Mar 28 20:55:37 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:55:37 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:55:37 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 20:55:37 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 20:55:37 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 20:55:37 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:55:37 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 20:55:37 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 20:55:37 [main] com.course.Application - Started Application in 2.791 seconds (JVM running for 3.609)
+[INFO ] 2020-03-28 20:56:09 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 33328 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:56:09 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:56:09 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:56:09 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:56:09 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:56:09 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:56:09 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:56:09 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1269 ms
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:56:09 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:56:09 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:56:09 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 20:56:09 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 20:56:09 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 20:56:09 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:56:09 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 20:56:09 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 20:56:09 [main] com.course.Application - Started Application in 2.858 seconds (JVM running for 3.844)
+[INFO ] 2020-03-28 20:56:28 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 25728 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 20:56:28 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 20:56:28 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:56:28 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:56:28 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 20:56:28 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:56:28 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 20:56:28 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1528 ms
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 20:56:28 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateUser],methods=[POST]}" onto public int com.course.controller.Demo.test3(com.course.model.User)
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUser],methods=[GET]}" onto public int com.course.controller.Demo.test4(int)
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:56:28 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 20:56:28 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 20:56:28 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 20:56:28 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 20:56:28 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 20:56:28 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 20:56:28 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 20:56:28 [main] com.course.Application - Started Application in 3.141 seconds (JVM running for 4.022)
+[INFO ] 2020-03-28 20:56:28 [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-03-28 20:56:28 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-03-28 20:56:28 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+[INFO ] 2020-03-28 21:20:28 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 29880 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 21:20:28 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 21:20:28 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13b2ea6: startup date [Sat Mar 28 21:20:28 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:20:28 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 21:20:28 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:20:28 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 21:20:28 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1398 ms
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 21:20:28 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13b2ea6: startup date [Sat Mar 28 21:20:28 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateUser],methods=[POST]}" onto public int com.course.controller.Demo.test3(com.course.model.User)
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUser],methods=[GET]}" onto public int com.course.controller.Demo.test4(int)
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:20:28 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:20:28 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 21:20:28 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 21:20:28 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 21:20:28 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:20:28 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 21:20:28 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 21:20:28 [main] com.course.Application - Started Application in 3.592 seconds (JVM running for 4.454)
+[INFO ] 2020-03-28 21:20:28 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-03-28 21:20:28 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-03-28 21:20:28 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+[INFO ] 2020-03-28 21:24:09 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 38696 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 21:24:09 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 21:24:09 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 21:24:09 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:24:09 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 21:24:09 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:24:09 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 21:24:09 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1405 ms
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 21:24:09 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 21:24:09 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateUser],methods=[POST]}" onto public int com.course.controller.Demo.test3(com.course.model.User)
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUser],methods=[GET]}" onto public int com.course.controller.Demo.test4(java.lang.Integer)
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:24:09 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:24:09 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 21:24:09 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 21:24:09 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 21:24:09 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:24:09 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 21:24:09 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 21:24:09 [main] com.course.Application - Started Application in 3.126 seconds (JVM running for 4.085)
+[INFO ] 2020-03-28 21:24:09 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-03-28 21:24:09 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-03-28 21:24:09 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[INFO ] 2020-03-28 21:24:09 [http-nio-8888-exec-6] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-03-28 21:24:09 [http-nio-8888-exec-6] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-03-28 21:31:05 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 31080 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 21:31:05 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 21:31:05 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 21:31:05 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:31:05 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 21:31:05 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:31:05 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 21:31:05 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1548 ms
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 21:31:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 21:31:05 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateUser],methods=[POST]}" onto public int com.course.controller.Demo.test3(com.course.model.User)
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUser],methods=[GET]}" onto public int com.course.controller.Demo.test4(int)
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:31:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:31:05 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 21:31:05 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 21:31:05 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 21:31:05 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:31:05 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 21:31:05 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 21:31:05 [main] com.course.Application - Started Application in 3.243 seconds (JVM running for 4.072)
+[INFO ] 2020-03-28 21:31:05 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-03-28 21:31:05 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-03-28 21:31:05 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[INFO ] 2020-03-28 21:38:29 [main] com.course.Application - Starting Application on LAPTOP-FR5RUG7D with PID 32348 (D:\java_jdk\testNG\zbb\Chapter11\target\classes started by 赵彬彬 in D:\java_jdk\testNG\zbb)
+[INFO ] 2020-03-28 21:38:29 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2020-03-28 21:38:29 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 21:38:29 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:38:29 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2020-03-28 21:38:29 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:38:29 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2020-03-28 21:38:29 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;";D:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin";D:\git\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\赵彬彬\AppData\Local\Microsoft\WindowsApps;D:\java_jdk\IDEA\IntelliJ IDEA Community Edition 2019.2.4\bin;;D:\java_jdk\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;;.]
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1306 ms
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-03-28 21:38:29 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1465398: startup date [Sat Mar 28 21:38:29 CST 2020]; root of context hierarchy
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int com.course.controller.Demo.test2(com.course.model.User)
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateUser],methods=[POST]}" onto public int com.course.controller.Demo.test3(com.course.model.User)
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUser],methods=[GET]}" onto public int com.course.controller.Demo.test4(java.lang.Integer)
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sql1],methods=[GET]}" onto public int com.course.controller.Demo.test1()
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:38:29 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-03-28 21:38:29 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-03-28 21:38:29 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[INFO ] 2020-03-28 21:38:29 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[INFO ] 2020-03-28 21:38:29 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2020-03-28 21:38:29 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-03-28 21:38:29 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+[INFO ] 2020-03-28 21:38:29 [main] com.course.Application - Started Application in 2.921 seconds (JVM running for 3.822)
+[INFO ] 2020-03-28 21:38:29 [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-03-28 21:38:29 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-03-28 21:38:29 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+[INFO ] 2020-03-28 21:38:29 [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-03-28 21:38:29 [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

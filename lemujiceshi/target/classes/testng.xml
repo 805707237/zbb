@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="测试套件">
+    <test name="测试模块">
+        <classes>
+            <class name ="com.course.lemuji.yyScript">
+                <methods>
+                    <include name="organAgencyAuditService"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+    <listeners>
+<!--        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <listener class-name="com.course.model.ExtentTestNGIReporterListenerOld"></listener>
+    </listeners>
+
+</suite>
+
