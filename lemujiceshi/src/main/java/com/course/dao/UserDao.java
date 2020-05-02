@@ -2,6 +2,7 @@ package com.course.dao;
 
 
 
+import com.course.model.sql.QueryVo;
 import com.course.model.sql.User;
 import com.course.model.sql.Users;
 import java.util.List;
@@ -32,6 +33,9 @@ public interface UserDao {
 
     /**模糊查询**/
     List<User> testName(String name);
+
+    /**模糊查询二**/
+    List<User> TestNameVo(QueryVo queryVo);
 
     /**查看用户条数**/
     int countUser();

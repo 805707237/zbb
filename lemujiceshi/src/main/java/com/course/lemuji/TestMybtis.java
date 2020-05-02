@@ -1,6 +1,7 @@
 package com.course.lemuji;
 
 import com.course.dao.UserDao;
+import com.course.model.sql.QueryVo;
 import com.course.model.sql.User;
 import com.course.model.sql.Users;
 import org.apache.ibatis.io.Resources;
@@ -109,6 +110,18 @@ public class TestMybtis {
         List<User> users=userDao.testName("%三%");
         for(User user:users){
             System.out.println(user);
+        }
+    }
+    /**模糊查询二**/
+    @Test
+    public void  TestNameVo(){
+        User user=new User();
+        QueryVo queryVo=new QueryVo();
+        user.setName("%三%");
+        queryVo.setUser(user);
+        List<User> users=userDao.testName("%三%");
+        for(User u:users){
+            System.out.println(u);
         }
     }
     /**查看记录条数**/

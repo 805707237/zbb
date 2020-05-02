@@ -15,6 +15,13 @@
     <insert id="addUser" parameterType="com.course.model.sql.User">
         insert into user (id,name,age,max,password) values (#{id},#{name},#{age},#{max},#{password});
     </insert>
+    <!--    添加用户信息后查询id  keyProperty="实体类属性名称" keyColumn="数据库列名" resultType="结果集类型" order="什么时候执行">-->
+    <insert id="addUser_id" parameterType="com.course.model.sql.User">
+        <selectKey keyProperty="id" keyColumn="id" resultType="int" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into user (id,name,age,max,password) values (#{id},#{name},#{age},#{max},#{password});
+    </insert>
 <!--    修改用户信息-->
     <update id="updateUser" parameterType="com.course.model.sql.User">
         update user set name=#{name},age=#{age},max=#{max},password=#{password} where id=#{id}
@@ -31,23 +38,14 @@
     <select id="testName" parameterType="string" resultType="com.course.model.sql.User">
         select * from user where name like #{name}
     </select>
+<!--    模糊查询二-->
+    <select id="TestNameVo" parameterType="com.course.model.sql.QueryVo" resultType="com.course.model.sql.User">
+        select * from user where name like #{user.name}
+    </select>
     <select id="countUser" resultType="int">
         select count(*) from user;
     </select>
 
-    <!--    <select id="login" resultType="Integer">-->
-    <!--        select count(*) from where userName=#{userName} and password=#{password}-->
-    <!--    </select>-->
-    <!--    <insert id="addUser" parameterType="com.course.model.User">-->
-    <!--        insert into user(id,name,age,max)-->
-    <!--        values (#{id},#{name},#{age},#{max})-->
-    <!--    </insert>-->
-    <!--    <update id="updateUser" parameterType="com.course.model.User">-->
-    <!--        update user set name=#{name},age=#{age}-->
-    <!--        where id=#{id}-->
-    <!--    </update>-->
-    <!--    <delete id="deleteUser" parameterType="Integer">-->
-    <!--        delete from user where id=#{id}-->
-    <!--    </delete>-->
+
 
 </mapper>

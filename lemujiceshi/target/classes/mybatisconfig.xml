@@ -11,13 +11,13 @@
             <!-- 数据库连接相关配置 ,这里动态获取config.properties文件中的内容-->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver" />
-<!--                <property name="url" value="jdbc:mysql://localhost:3306/zbb" />-->
-<!--                <property name="username" value="root" />-->
-<!--                <property name="password" value="zbb2133778" />-->
-
-                <property name="url" value="jdbc:mysql://202.91.251.165:33061/auths" />
+                <property name="url" value="jdbc:mysql://192.168.0.103:3306/zbb" />
                 <property name="username" value="root" />
-                <property name="password" value="lmi@2019!@" />
+                <property name="password" value="zbb2133778" />
+
+<!--                <property name="url" value="jdbc:mysql://202.91.251.165:33061/auths" />-->
+<!--                <property name="username" value="root" />-->
+<!--                <property name="password" value="lmi@2019!@" />-->
             </dataSource>
         </environment>
     </environments>

@@ -1,0 +1,9 @@
+[DEBUG] 2020-05-01 22:44:57 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-01 22:44:57 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-01 22:44:57 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-01 22:49:57 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-01 22:49:57 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-01 22:49:57 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-01 22:50:53 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-01 22:50:53 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-01 22:50:53 [main] com.course.dao.UserDao.getUsers - <==      Total: 1

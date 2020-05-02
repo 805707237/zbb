@@ -10,3 +10,4 @@ public class User {
     private String max;
     private String password;
 }
+

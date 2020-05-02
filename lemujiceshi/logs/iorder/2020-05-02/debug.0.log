@@ -1,0 +1,11 @@
+[DEBUG] 2020-05-02 09:18:07 [main] com.course.dao.UserDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-02 09:18:07 [main] com.course.dao.UserDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-02 09:18:07 [main] com.course.dao.UserDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-02 14:05:12 [main] com.course.dao.UserDao.testName - ==>  Preparing: select * from user where name like ? 
+[DEBUG] 2020-05-02 14:05:12 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
+[DEBUG] 2020-05-02 14:08:12 [main] com.course.dao.UserDao.testName - ==>  Preparing: select * from user where name like ? 
+[DEBUG] 2020-05-02 14:08:12 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
+[DEBUG] 2020-05-02 14:09:06 [main] com.course.dao.UserDao.testName - ==>  Preparing: select * from user where name like ? 
+[DEBUG] 2020-05-02 14:09:06 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
+[DEBUG] 2020-05-02 14:18:20 [main] com.course.dao.UserDao.testName - ==>  Preparing: select * from user where name like ? 
+[DEBUG] 2020-05-02 14:18:20 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
