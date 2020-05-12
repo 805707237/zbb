@@ -1,7 +1,9 @@
 package com.course.lemuji;
 
+import com.course.dao.TemDao;
 import com.course.dao.UserDao;
 import com.course.model.sql.QueryVo;
+import com.course.model.sql.Tem;
 import com.course.model.sql.User;
 import com.course.model.sql.Users;
 import org.apache.ibatis.io.Resources;
@@ -17,13 +19,15 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TestMybtis {
     private InputStream in;
-    private UserDao userDao;
     private SqlSession sqlsession;
     private static Logger log = LoggerFactory.getLogger(yyScript.class);
+    private UserDao userDao;
+    private TemDao temDao;
     /**
      * 链接数据库
      * 测试开始前执行
@@ -35,7 +39,7 @@ public class TestMybtis {
         //2.创建SqlSessionFactory对象
         SqlSessionFactoryBuilder builder=new SqlSessionFactoryBuilder();
         SqlSessionFactory factory=builder.build(in);
-        //3.使用工厂生产SqlSession对象
+        //3.使用工厂生产SqlSession对象 参数加上true自动提交事务
         sqlsession=factory.openSession();
         //4.使用SqlSession创建Dao接口的代理对象
         userDao=sqlsession.getMapper(UserDao.class);
@@ -53,13 +57,14 @@ public class TestMybtis {
         System.out.println("测试结束。");
     }
 
+
     /**
      * 查询用户
      * */
     @Test
-    public void UserList(){
+    public void UsersList(){
         //5.使用代理对象执行方法
-        List<Users> users=userDao.findAll();
+        List<Users> users=userDao.findAlls();
         for(Users user:users){
             System.out.println(user);
         }
@@ -130,4 +135,62 @@ public class TestMybtis {
         System.out.println(userDao.countUser());
         log.info("打印日志123");
     }
+    /**根据条件查询**/
+    @Test
+    public void findUserByCondition(){
+        User user=new User();
+//        user.setId(1);
+        user.setAge("20");
+        user.setMax("女");
+        List<User> users=userDao.findUserByCondition(user);
+        for(User u:users){
+            System.out.println(u);
+        }
+    }
+    /**in方法查询**/
+    @Test
+    public void UserInIds(){
+        QueryVo vo =new QueryVo();
+        List<Integer> ids=new ArrayList<Integer>();
+        ids.add(1);
+        ids.add(2);
+        ids.add(3);
+        vo.setIds(ids);
+        List<User> users=userDao.UserInIds(vo);
+        for (User u:users){
+            System.out.println(u);
+        }
+    }
+
+    /**
+     * 一对一查询用户
+     * */
+    @Test
+    public void UserList(){
+        //5.使用代理对象执行方法
+        List<User> users=userDao.findAll();
+        for(User user:users){
+            System.out.println(user);
+        }
+    }
+    /**多表查询，一对多查询**/
+    @Test
+    public void UsersTem(){
+        List<User> u=userDao.usersTem();
+        for(User user:u){
+            System.out.println(user);
+            System.out.println(user.getTems());
+            System.out.println("-----------------------------");
+        }
+    }
+
+
+//    @Test
+//    public void TemList(){
+//        List<Tem> tem= temDao.findAll();
+//        for(Tem t:tem){
+//            System.out.println(t);
+//        }
+//
+//    }
 }

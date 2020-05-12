@@ -32,6 +32,8 @@ public class yyScript {
     private UserDao userDao;
     private InputStream in;
     private SqlSession sqlsession;
+    private CloseableHttpClient client;
+    private CloseableHttpClient client1;
     private static Logger log = LoggerFactory.getLogger(yyScript.class);
     /**
      * 链接数据库
@@ -60,10 +62,10 @@ public class yyScript {
         json.put("method", api.smscode);
         StringEntity entity=new StringEntity(json.toString(),"utf-8");  //将JSON格式参数加到方法中
         getcode.setEntity(entity); //参数加到请求中
-        CloseableHttpClient client = api.createSSLClientDefault();//跳过证书方法
-        //CloseableHttpClient client= HttpClientBuilder.create().build();//获取client对象，用来发送请求
-        client.execute(getcode);//发送验证码
-        Users users=userDao.getUsers("13300000000");//将18357876141用户从数据库映射到Users类
+        this.client = api.createSSLClientDefault();//跳过证书方法
+        this.client1= HttpClientBuilder.create().build();//获取client对象，用来发送请求
+        this.client.execute(getcode);//发送验证码
+        Users users=userDao.getUsers("13300000000");//将13300000000用户从数据库映射到Users类
         HttpPost login=new HttpPost(url);
         JSONObject json1=new JSONObject();
         json1.put("key","13300000000");
@@ -71,7 +73,7 @@ public class yyScript {
         json1.put("method", api.login);
         StringEntity entity1=new StringEntity(json1.toString(),"utf-8");  //将JSON格式参数加到方法中
         login.setEntity(entity1);
-        HttpResponse response= client.execute(login);//登录
+        HttpResponse response= this.client.execute(login);//登录
         String result=EntityUtils.toString(response.getEntity(),"utf-8");
         JSONObject jsonReponse=new JSONObject(result);
         System.out.println(jsonReponse.toString());
@@ -89,7 +91,7 @@ public class yyScript {
         //释放资源
         sqlsession.close();
         in.close();
-        System.out.println("测试结束。");
+        log.info("测试结束！！！！！！测试结束！！！！！！测试结束！！！！！！");
     }
 
     /**代理商入住审核列表**/
@@ -130,6 +132,7 @@ public class yyScript {
         String a= jsonObject.getString("statusCode");
         Reporter.log("name"+name+ "method:"+api.organAgencyAuditService+",pageNumber:"+pageNumber+"," +
                 "pageSize:"+pageSize+"status"+status);
+        Reporter.log("响应结果： "+relult);
         log.info(relult);
         Assert.assertEquals(a,statusCode);
     }

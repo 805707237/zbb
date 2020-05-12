@@ -1,0 +1,48 @@
+[DEBUG] 2020-05-06 09:42:38 [main] com.course.dao.UserDao.findAll - ==>  Preparing: select * from user 
+[DEBUG] 2020-05-06 09:42:38 [main] com.course.dao.UserDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-06 09:42:38 [main] com.course.dao.UserDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-06 09:49:46 [main] com.course.dao.TemDao.findAll - ==>  Preparing: select * from tem 
+[DEBUG] 2020-05-06 09:49:46 [main] com.course.dao.TemDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-06 09:49:46 [main] com.course.dao.TemDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-06 10:15:44 [main] com.course.dao.UserDao.findAll - ==>  Preparing: select * from user 
+[DEBUG] 2020-05-06 10:15:44 [main] com.course.dao.UserDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-06 10:15:44 [main] com.course.dao.UserDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-06 10:15:59 [main] com.course.dao.TemDao.findAll - ==>  Preparing: select * from tem 
+[DEBUG] 2020-05-06 10:15:59 [main] com.course.dao.TemDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-06 10:15:59 [main] com.course.dao.TemDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-06 10:17:17 [main] com.course.dao.TemDao.findAll - ==>  Preparing: select * from tem,user where id=id 
+[DEBUG] 2020-05-06 10:17:17 [main] com.course.dao.TemDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-06 11:25:50 [main] com.course.dao.TemDao.findAll - ==>  Preparing: select * from tem 
+[DEBUG] 2020-05-06 11:25:50 [main] com.course.dao.TemDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-06 11:25:50 [main] com.course.dao.TemDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-06 14:49:41 [main] com.course.dao.TemDao.temUser - ==>  Preparing: select * form user u,tem t where u.id=t.id; 
+[DEBUG] 2020-05-06 14:49:41 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 14:50:35 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT * from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 14:50:35 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 14:50:35 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-06 14:50:51 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT * from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 14:50:51 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 14:50:51 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-06 15:31:46 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.tid=u.id 
+[DEBUG] 2020-05-06 15:31:46 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 15:32:27 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 15:32:27 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 15:32:27 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-06 16:15:29 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 16:15:29 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 16:15:29 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-06 16:15:43 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 16:15:43 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 16:15:43 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-06 16:46:31 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 16:46:31 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 16:46:31 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-06 17:03:14 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 17:03:14 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-06 17:03:14 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-06 17:32:10 [main] com.course.dao.UserDao.usersTem - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-06 17:32:10 [main] com.course.dao.UserDao.usersTem - ==> Parameters: 
+[DEBUG] 2020-05-06 17:32:10 [main] com.course.dao.UserDao.usersTem - <==      Total: 4
+[DEBUG] 2020-05-06 17:33:56 [main] com.course.dao.UserDao.usersTem - ==>  Preparing: SELECT u.*,t.card ,t.id tid from user u left join tem t on t.id=u.id 
+[DEBUG] 2020-05-06 17:33:56 [main] com.course.dao.UserDao.usersTem - ==> Parameters: 
+[DEBUG] 2020-05-06 17:33:56 [main] com.course.dao.UserDao.usersTem - <==      Total: 5

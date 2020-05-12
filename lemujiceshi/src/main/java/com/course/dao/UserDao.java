@@ -17,7 +17,9 @@ public interface UserDao {
     Users getUsers(String mobile);
 
     /**查询所有用户接口**/
-    List<Users> findAll();
+    List<User> findAll();
+    /**查询所有用户接口**/
+    List<Users> findAlls();
 
     /**存用户数据接口**/
     void addUser(User user);
@@ -39,5 +41,15 @@ public interface UserDao {
 
     /**查看用户条数**/
     int countUser();
+
+    /**根据条件查询**/
+    List<User> findUserByCondition(User user);
+
+    /**in方法查询，加入多个条件
+     * @return**/
+    List<User> UserInIds(QueryVo vo);
+
+     /**一对多查询**/
+     List<User> usersTem();
 }
 

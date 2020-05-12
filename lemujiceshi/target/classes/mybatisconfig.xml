@@ -4,14 +4,15 @@
                 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+
     <!-- 环境配置 -->
     <environments default="mysql">
         <environment id="mysql">
             <transactionManager type="JDBC"/>
-            <!-- 数据库连接相关配置 ,这里动态获取config.properties文件中的内容-->
+            <!-- 配置链接池 -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://192.168.0.103:3306/zbb" />
+                <property name="url" value="jdbc:mysql://localhost:3306/zbb" />
                 <property name="username" value="root" />
                 <property name="password" value="zbb2133778" />
 
@@ -22,10 +23,25 @@
         </environment>
     </environments>
 
+<!--    <environments default="mysql">-->
+<!--        <environment id="mysql">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            &lt;!&ndash; 配置链接池 &ndash;&gt;-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver" />-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/sys" />-->
+<!--                <property name="username" value="root" />-->
+<!--                <property name="password" value="zbb2133778" />-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
     <!-- mapping文件路径配置 -->
     <mappers>
         <mapper resource="com/sql/dao/UsersDao.xml"/>
+        <mapper resource="com/sql/dao/TemDao.xml"/>
     </mappers>
+
 
 </configuration>
 

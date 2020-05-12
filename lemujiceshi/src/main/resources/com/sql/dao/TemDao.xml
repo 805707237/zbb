@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course.dao.TemDao">
+<!--    查询所有-->
+    <select id="findAll" resultType="com.course.model.sql.Tem">
+        select * from tem
+    </select>
+
+<!--    多表一对一查询 property="实体类属性" colum="数据库字段名"-->
+    <resultMap id="temuserMap" type="com.course.model.sql.Tem">
+        <id property="id" column="tid"></id>
+        <result property="card" column="card"></result>
+        <association property="user" column="id" javaType="com.course.model.sql.User">
+            <id property="id" column="id"></id>
+            <result property="name" column="name"></result>
+            <result property="age" column="age"></result>
+            <result property="max" column="max"></result>
+            <result property="password" column="password"></result>
+        </association>
+    </resultMap>
+    <select id="temUser" resultMap="temuserMap">
+        SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id
+    </select>
+
+
+</mapper>

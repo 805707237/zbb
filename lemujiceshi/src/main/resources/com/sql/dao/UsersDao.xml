@@ -4,8 +4,19 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.course.dao.UserDao">
+<!--    配置 查询结果的列名和实体类的属性名的对应关系-->
+    <resultMap id="userMap" type="com.course.model.sql.User">
+        <id property="id" column="id"></id>
+        <id property="name" column="name"></id>
+        <id property="age" column="age"></id>
+        <id property="max" column="max"></id>
+        <id property="password" column="password"></id>
+    </resultMap>
+    <select id="findAll" resultType="com.course.model.sql.User">
+        select * from user
+    </select>
 
-    <!-- 查询用户信息 resultType返回型类型-->
+    <!-- 查询用户信息 parameterType:传给此语句的参数的全路径名或别名， resultType返回型类型-->
     <select id="getUsers" resultType="com.course.model.sql.Users">
         select * from users where mobile=#{mobile};
     </select>
@@ -45,7 +56,55 @@
     <select id="countUser" resultType="int">
         select count(*) from user;
     </select>
+<!--    条件查询-->
+    <select id="findUserByCondition" parameterType="com.course.model.sql.User" resultType="com.course.model.sql.User">
+        select * from user
+        <where>
+           <if test="id != null">
+                and id=#{id}
+            </if>
+            <if test="name != null">
+                 and name=#{name}
+            </if>
+            <if test="age != null">
+                 and age=#{age}
+            </if>
+            <if test="max != null">
+                 and max=#{max}
+            </if>
+            <if test="password != null">
+                 and password=#{password}
+            </if>
+        </where>
+    </select>
+
+<!--    in用法-->
+    <select id="UserInIds" resultMap="userMap" parameterType="com.course.model.sql.QueryVo">
+        select * from user
+        <where>
+            <if test="ids != null and ids.size>0">
+                <!--collection表示集合 open表示开始 colse表示结束 separator表示逗号分隔-->
+                <foreach collection="ids" open="and id in(" close=")" item="uid" separator=",">
+                    #{uid}
+                </foreach>
+            </if>
+        </where>
+    </select>
 
 
-
+    <!--    一对多查询 property="实体类属性" colum="数据库字段名"-->
+    <resultMap id="userstepMap" type="com.course.model.sql.User">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="age" column="age"></result>
+        <result property="max" column="max"></result>
+        <result property="password" column="password"></result>
+        <collection property="tems" ofType="com.course.model.sql.Tem">
+            <id property="id" column="tid"></id>
+            <result property="card" column="card"></result>
+        </collection>
+    </resultMap>
+    <select id="usersTem" resultMap="userstepMap">
+        SELECT u.*,t.card ,t.id tid from user u left join tem t on t.id=u.id
+    </select>
 </mapper>

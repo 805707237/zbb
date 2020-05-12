@@ -15,7 +15,6 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.List;
-
 public class MyHttpClient {
 
     @Test
@@ -27,8 +26,8 @@ public class MyHttpClient {
         CloseableHttpResponse response=client.execute(get);
         result= EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
-
     }
+
 
     @Test
     public void test2() throws IOException {

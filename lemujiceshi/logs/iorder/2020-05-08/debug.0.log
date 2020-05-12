@@ -1,0 +1,3 @@
+[DEBUG] 2020-05-08 20:41:06 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-08 20:41:06 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-08 20:41:06 [main] com.course.dao.TemDao.temUser - <==      Total: 4

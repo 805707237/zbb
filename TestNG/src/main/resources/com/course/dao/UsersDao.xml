@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.dao.UsersDao">
+
+    <!--  查询用户信息 parameterType:传给此语句的参数的全路径名或别名， resultType返回型类型-->
+    <select id="getUsers" parameterType="String" resultType="com.course.model.sql.Users">
+        select * from users where mobile=#{mobile};
+    </select>
+
+    <!--  查询所有  -->
+    <select id="findAll" resultType="com.course.model.sql.Users">
+        select * from users
+    </select>
+
+</mapper>

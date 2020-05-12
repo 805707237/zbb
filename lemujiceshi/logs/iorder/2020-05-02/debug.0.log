@@ -9,3 +9,68 @@
 [DEBUG] 2020-05-02 14:09:06 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
 [DEBUG] 2020-05-02 14:18:20 [main] com.course.dao.UserDao.testName - ==>  Preparing: select * from user where name like ? 
 [DEBUG] 2020-05-02 14:18:20 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
+[DEBUG] 2020-05-02 15:00:25 [main] com.course.dao.UserDao.testName - ==>  Preparing: select * from user where name like ? 
+[DEBUG] 2020-05-02 15:00:25 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
+[DEBUG] 2020-05-02 15:00:25 [main] com.course.dao.UserDao.testName - <==      Total: 3
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.addUser - ==>  Preparing: insert into user (id,name,age,max,password) values (?,?,?,?,?); 
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.addUser - ==> Parameters: 10(Integer), 张三(String), 10(String), 男(String), 10086(String)
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.addUser - <==    Updates: 1
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.countUser - ==>  Preparing: select count(*) from user; 
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.countUser - ==> Parameters: 
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.countUser - <==      Total: 1
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.delectUser - ==>  Preparing: delete from user where id=?; 
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.delectUser - ==> Parameters: 10(Integer)
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.delectUser - <==    Updates: 2
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.oneUser - ==>  Preparing: select * from user where id = ?; 
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.oneUser - ==> Parameters: 1(Integer)
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.oneUser - <==      Total: 1
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.testName - ==>  Preparing: select * from user where name like ? 
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.testName - ==> Parameters: %三%(String)
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.testName - <==      Total: 2
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.updateUser - ==>  Preparing: update user set name=?,age=?,max=?,password=? where id=? 
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.updateUser - ==> Parameters: zhangsan(String), 11(String), 女(String), 10080(String), 10(Integer)
+[DEBUG] 2020-05-02 21:41:29 [main] com.course.dao.UserDao.updateUser - <==    Updates: 0
+[DEBUG] 2020-05-02 21:42:12 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? 
+[DEBUG] 2020-05-02 21:42:12 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 1(Integer)
+[DEBUG] 2020-05-02 21:42:12 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 1
+[DEBUG] 2020-05-02 21:42:36 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? 
+[DEBUG] 2020-05-02 21:42:36 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 1(Integer)
+[DEBUG] 2020-05-02 21:42:36 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 1
+[DEBUG] 2020-05-02 21:43:53 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? and age=? and max=? 
+[DEBUG] 2020-05-02 21:43:53 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 0(Integer), 20(String), 女(String)
+[DEBUG] 2020-05-02 21:43:53 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 0
+[DEBUG] 2020-05-02 21:44:36 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? and max=? 
+[DEBUG] 2020-05-02 21:44:36 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 0(Integer), 女(String)
+[DEBUG] 2020-05-02 21:44:36 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 0
+[DEBUG] 2020-05-02 21:46:20 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? and age=? and max=? 
+[DEBUG] 2020-05-02 21:46:20 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 0(Integer), 20(String), 女(String)
+[DEBUG] 2020-05-02 21:46:20 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 0
+[DEBUG] 2020-05-02 21:47:16 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? 
+[DEBUG] 2020-05-02 21:47:16 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 1(Integer)
+[DEBUG] 2020-05-02 21:47:16 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 1
+[DEBUG] 2020-05-02 21:49:48 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? and age=? 
+[DEBUG] 2020-05-02 21:49:48 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 0(Integer), 20(String)
+[DEBUG] 2020-05-02 21:49:48 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 0
+[DEBUG] 2020-05-02 21:50:26 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? and age=? 
+[DEBUG] 2020-05-02 21:50:26 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 0(Integer), 20(String)
+[DEBUG] 2020-05-02 21:50:26 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 0
+[DEBUG] 2020-05-02 21:51:19 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user where 1=1 and id=? and age=? 
+[DEBUG] 2020-05-02 21:51:19 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 0(Integer), 20(String)
+[DEBUG] 2020-05-02 21:51:19 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 0
+[DEBUG] 2020-05-02 21:53:04 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user WHERE id=? and age=? 
+[DEBUG] 2020-05-02 21:53:04 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 0(Integer), 20(String)
+[DEBUG] 2020-05-02 21:53:04 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 0
+[DEBUG] 2020-05-02 21:55:46 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user WHERE age=? 
+[DEBUG] 2020-05-02 21:55:46 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 20(String)
+[DEBUG] 2020-05-02 21:55:46 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 2
+[DEBUG] 2020-05-02 22:14:09 [main] c.c.dao.UserDao.findUserByCondition - ==>  Preparing: select * from user WHERE id=? 
+[DEBUG] 2020-05-02 22:14:09 [main] c.c.dao.UserDao.findUserByCondition - ==> Parameters: 1(String)
+[DEBUG] 2020-05-02 22:14:09 [main] c.c.dao.UserDao.findUserByCondition - <==      Total: 1
+[DEBUG] 2020-05-02 23:11:15 [main] com.course.dao.UserDao.UserInIds - ==>  Preparing: select * from user WHERE id in( ? , ? , ? ) 
+[DEBUG] 2020-05-02 23:11:15 [main] com.course.dao.UserDao.UserInIds - ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+[DEBUG] 2020-05-02 23:11:15 [main] com.course.dao.UserDao.UserInIds - <==      Total: 3
+[DEBUG] 2020-05-02 23:11:31 [main] com.course.dao.UserDao.UserInIds - ==>  Preparing: select * from user WHERE id in( ? , ? , ? ) 
+[DEBUG] 2020-05-02 23:11:31 [main] com.course.dao.UserDao.UserInIds - ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+[DEBUG] 2020-05-02 23:12:20 [main] com.course.dao.UserDao.UserInIds - ==>  Preparing: select * from user WHERE id in( ? , ? , ? ) 
+[DEBUG] 2020-05-02 23:12:20 [main] com.course.dao.UserDao.UserInIds - ==> Parameters: 1(Integer), 2(Integer), 3(Integer)
+[DEBUG] 2020-05-02 23:12:20 [main] com.course.dao.UserDao.UserInIds - <==      Total: 3

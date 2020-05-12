@@ -1,0 +1,21 @@
+[DEBUG] 2020-05-07 18:30:31 [main] com.course.dao.UsersDao.findAll - ==>  Preparing: select * from users 
+[DEBUG] 2020-05-07 18:30:31 [main] com.course.dao.UsersDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-07 18:30:31 [main] com.course.dao.UsersDao.findAll - <==      Total: 97
+[DEBUG] 2020-05-07 18:31:06 [main] com.course.dao.UsersDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-07 18:31:06 [main] com.course.dao.UsersDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-07 18:31:06 [main] com.course.dao.UsersDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-07 23:22:41 [main] com.course.dao.UsersDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-07 23:22:41 [main] com.course.dao.UsersDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-07 23:22:41 [main] com.course.dao.UsersDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-07 23:25:27 [main] com.course.dao.UsersDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-07 23:25:27 [main] com.course.dao.UsersDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-07 23:25:27 [main] com.course.dao.UsersDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-07 23:27:40 [main] com.course.dao.UsersDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-07 23:27:40 [main] com.course.dao.UsersDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-07 23:27:40 [main] com.course.dao.UsersDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-07 23:28:51 [main] com.course.dao.UsersDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-07 23:28:51 [main] com.course.dao.UsersDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-07 23:28:51 [main] com.course.dao.UsersDao.getUsers - <==      Total: 1
+[DEBUG] 2020-05-07 23:29:24 [main] com.course.dao.UsersDao.getUsers - ==>  Preparing: select * from users where mobile=?; 
+[DEBUG] 2020-05-07 23:29:24 [main] com.course.dao.UsersDao.getUsers - ==> Parameters: 13300000000(String)
+[DEBUG] 2020-05-07 23:29:24 [main] com.course.dao.UsersDao.getUsers - <==      Total: 1

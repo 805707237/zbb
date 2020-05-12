@@ -1,0 +1,942 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Wconcept-Api自动化测试报告</title>
+
+	<style type='text/css'>
+		.node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Wconcept-Api自动化测试报告</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>May 12, 2020 04:06:22 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.6</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='81.818%'><span class='strong'>9</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='18.182%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='81.818%'><span class='strong'>9</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='18.182%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+74ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namemethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:null,pageSize:10status</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":{"endRow":10,"hasNextPage":true,"hasPreviousPage":false,"isFirstPage":false,"isLastPage":false,"list":[{"address":"","businessCityName":"","businessCountyName":"","businessProvinceName":"","createTime":1589184329000,"id":"83bdce428f204ee7b7d98f4a73c58a07","identifier":"DL20200511ZUHYM","mobile":"15512341115","name":"hanghou天香代理商公司","pageNum":0,"pageSize":10,"status":0,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393098561421312","identifier":"DL20200120K4KN0","mobile":"13336853888","name":"安吉林通电讯器材经营部","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582599604000,"id":"fe57b6a8b3fc47e0bb3100133826ffeb","identifier":"DL202002254SVAL","mobile":"18812340001","name":"全国-18812340001-0001","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1586593906000,"id":"d3d4d680e6654cee94c8b49155d3e1af","identifier":"DL20200411B8PGD","mobile":"17734561113","name":"zhehs一个测试公司0002","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582512373000,"id":"b247e02ae90c472fb67f1e3a36eb8754","identifier":"DL20200224EQVLO","mobile":"18833335551","name":"泰隆测试代理商","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"浙江省杭州市全市","businessCityName":"杭州市","businessCountyName":"全市","businessProvinceName":"浙江省","createTime":1579485286000,"id":"a7fd504eed1c4006affd044ddee2b1e7","identifier":"DL20200120F9Q5W","mobile":"13211112222","name":"代理商13111112222-浙江杭州","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1579485153000,"id":"a3b9589374c94199a8f7694344ca17bd","identifier":"DL20200120GGAAW","mobile":"13111112222","name":"代理商13111112222-全国","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1588929027000,"id":"9f4218eeb3f44cf29aabbb3195c09013","identifier":"DL20200508FM9KK","mobile":"13116786008","name":"测试的代理商","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1584080420000,"id":"95b2170cb1c84e8dbbd12548b60422a9","identifier":"DL20200313UKIKN","manager":"111","mobile":"13320024410","name":"泰隆-冰激凌-13320024410","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"浙江省杭州市上城区","businessCityName":"杭州市","businessCountyName":"上城区","businessProvinceName":"浙江省","createTime":1573719436000,"id":"952f6a6cced94007b9cf557bf01a3520","identifier":"DL20191114INJPR","mobile":"13111112000","name":"代理商13111112222","pageNum":0,"pageSize":10,"status":1,"type":2}],"navigateFirstPage":1,"navigateLastPage":3,"navigatePages":8,"navigatepageNums":[1,2,3],"nextPage":1,"pageNum":0,"pageSize":10,"pages":3,"prePage":0,"size":10,"startRow":1,"total":30},"message":"请求成功","statusCode":"2000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [3000] but found [2000]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.course.lemuji.YyScript.organAgencyAuditService(YyScript.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+99ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namemethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:1,pageSize:nullstatus</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":{"endRow":30,"hasNextPage":false,"hasPreviousPage":false,"isFirstPage":true,"isLastPage":true,"list":[{"address":"","businessCityName":"","businessCountyName":"","businessProvinceName":"","createTime":1589184329000,"id":"83bdce428f204ee7b7d98f4a73c58a07","identifier":"DL20200511ZUHYM","mobile":"15512341115","name":"hanghou天香代理商公司","pageNum":0,"pageSize":10,"status":0,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393098561421312","identifier":"DL20200120K4KN0","mobile":"13336853888","name":"安吉林通电讯器材经营部","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582599604000,"id":"fe57b6a8b3fc47e0bb3100133826ffeb","identifier":"DL202002254SVAL","mobile":"18812340001","name":"全国-18812340001-0001","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1586593906000,"id":"d3d4d680e6654cee94c8b49155d3e1af","identifier":"DL20200411B8PGD","mobile":"17734561113","name":"zhehs一个测试公司0002","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582512373000,"id":"b247e02ae90c472fb67f1e3a36eb8754","identifier":"DL20200224EQVLO","mobile":"18833335551","name":"泰隆测试代理商","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"浙江省杭州市全市","businessCityName":"杭州市","businessCountyName":"全市","businessProvinceName":"浙江省","createTime":1579485286000,"id":"a7fd504eed1c4006affd044ddee2b1e7","identifier":"DL20200120F9Q5W","mobile":"13211112222","name":"代理商13111112222-浙江杭州","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1579485153000,"id":"a3b9589374c94199a8f7694344ca17bd","identifier":"DL20200120GGAAW","mobile":"13111112222","name":"代理商13111112222-全国","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1588929027000,"id":"9f4218eeb3f44cf29aabbb3195c09013","identifier":"DL20200508FM9KK","mobile":"13116786008","name":"测试的代理商","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1584080420000,"id":"95b2170cb1c84e8dbbd12548b60422a9","identifier":"DL20200313UKIKN","manager":"111","mobile":"13320024410","name":"泰隆-冰激凌-13320024410","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"浙江省杭州市上城区","businessCityName":"杭州市","businessCountyName":"上城区","businessProvinceName":"浙江省","createTime":1573719436000,"id":"952f6a6cced94007b9cf557bf01a3520","identifier":"DL20191114INJPR","mobile":"13111112000","name":"代理商13111112222","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582705464000,"id":"8dde35e209a54fb18549bba95f42e072","identifier":"DL20200226192FI","mobile":"18874112222","name":"asd","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393099651940352","identifier":"DL202001207WB1F","mobile":"18072171712","name":"苍南县创维通信技术有限公司","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393099312201728","identifier":"DL20200120ZYRIA","mobile":"13705823118","name":"安吉孝丰泰丰通讯器材经营部","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393098951491584","identifier":"DL20200120040QQ","mobile":"13306725191","name":"安吉绿苑手机维修服务部","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1579572870000,"id":"0a9dccb14c3a49d4980b84a1eef006f4","identifier":"DL20200121F1DVM","manager":"哈哈哈222","mobile":"15796790026","name":"杭州丰奕资产管理合伙企业（有限合伙）","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393098192322560","identifier":"DL20200120APVBY","mobile":"13905821007","name":"安吉金翔通讯设备有限公司","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393097739337728","identifier":"DL20200120ZTAEI","mobile":"18657278484","name":"安吉佳机汇通讯设备有限公司","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479639000,"id":"7907393097223438336","identifier":"DL20200120KNERN","mobile":"18105727198","name":"安吉互通手机经营部","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479639000,"id":"7907393096820785152","identifier":"DL20200120R3Q6Q","mobile":"18768238232","name":"安吉递铺妞妞手机经营部","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479639000,"id":"7907393096401354752","identifier":"DL202001205HSLC","mobile":"18857205666","name":"安吉递铺百胜通讯器材商行","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479639000,"id":"7907393095935787008","identifier":"DL2020012010XZJ","mobile":"18012986999","name":" 江苏诺源通讯设备有限公司","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479639000,"id":"7907393095491190784","identifier":"DL202001205L5VZ","manager":"吴芳","mobile":"15857133857","name":"浙江天登电子科技有限公司","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479639000,"id":"7907393095004651520","identifier":"DL2020012064U02","mobile":"18005736573","name":"嘉兴市豫达通讯有限公司","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479639000,"id":"7907393094459392000","identifier":"DL202001205LCNE","mobile":"15305730103","name":"嘉兴市南湖区建设街道飞火通讯器材经营部","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"河北省石家庄市长安区","businessCityName":"石家庄市","businessCountyName":"长安区","businessProvinceName":"河北省","createTime":1585632990000,"id":"538b7bcbb2294d6caa31139e41f90271","identifier":"DL20200331KC6K4","mobile":"18812341110","name":"17712341110的代理商公司（杭州）","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582508150000,"id":"3d64b0e37dfc419697aa8b96b2539d66","identifier":"DL20200224DEEQ3","manager":"kehuji_002","mobile":"18899998888","name":"测试代理商","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1585634717000,"id":"249c9253c1f44935a39686ed4831b039","identifier":"DL20200331XC0VM","mobile":"18812341119","name":"1119的代理商公司（杭州-万象城）","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1579488842000,"id":"2345f9811acb4823be8118f1c298330a","identifier":"DL20200120KGQGX","mobile":"15800000000","name":"杭州乐木几","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1586595830000,"id":"229d1d06c6a8479f83fa4e809115e88f","identifier":"DL20200411GTDGX","manager":"jehu ","mobile":"17734561116","name":"dsfdsfds","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"nullnullnull","createTime":1582515224000,"id":"d6fb461b09a7474a90e41b4e201ad462","identifier":"DL20200224WO2QV","mobile":"19883120008","name":"入驻失败代理商19883120008","pageNum":0,"pageSize":10,"status":5,"type":2}],"navigateFirstPage":0,"navigateLastPage":0,"navigatePages":8,"navigatepageNums":[],"nextPage":0,"pageNum":1,"pageSize":0,"pages":0,"prePage":0,"size":30,"startRow":1,"total":30},"message":"请求成功","statusCode":"2000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [3000] but found [2000]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.course.lemuji.YyScript.organAgencyAuditService(YyScript.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>commodityList---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+57ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>com.lemuji.pubs.general.commodityList</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":[{"id":236,"level":"0","orderNo":25,"parent":0,"title":"545"},{"commodityTypes":[{"commodityTypes":[{"id":235,"level":"11","orderNo":55,"parent":234,"title":"5555"}],"id":234,"level":"1","orderNo":6,"parent":233,"title":"4"}],"id":233,"level":"0","orderNo":5,"parent":0,"title":"2"},{"commodityTypes":[{"commodityTypes":[{"id":231,"level":"11","orderNo":0,"parent":230,"title":"冰箱"}],"id":230,"level":"1","orderNo":0,"parent":229,"title":"电器"},{"id":232,"level":"1","orderNo":0,"parent":229,"title":"配件"}],"id":229,"level":"0","orderNo":0,"parent":0,"title":"云米"},{"commodityTypes":[{"commodityTypes":[{"id":239,"level":"11","orderNo":0,"parent":238,"title":"华为"}],"id":238,"level":"1","orderNo":0,"parent":237,"title":"中国品牌"}],"id":237,"level":"0","orderNo":0,"parent":0,"title":"手机"}],"message":"请求成功","statusCode":"2000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+64ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>name杭州乐木几method:com.lemuji.auths.organAgencyAuditService.list,pageNumber:1,pageSize:10status1</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":{"endRow":1,"hasNextPage":false,"hasPreviousPage":false,"isFirstPage":true,"isLastPage":true,"list":[{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1579488842000,"id":"2345f9811acb4823be8118f1c298330a","identifier":"DL20200120KGQGX","mobile":"15800000000","name":"杭州乐木几","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2}],"navigateFirstPage":1,"navigateLastPage":1,"navigatePages":8,"navigatepageNums":[1],"nextPage":0,"pageNum":1,"pageSize":10,"pages":1,"prePage":0,"size":1,"startRow":1,"total":1},"message":"请求成功","statusCode":"2000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+75ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namenullmethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:1,pageSize:10status1</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":{"endRow":10,"hasNextPage":true,"hasPreviousPage":false,"isFirstPage":true,"isLastPage":false,"list":[{"address":"全国全市全区","businessCityName":"全市","businessCountyName":"全区","businessProvinceName":"全国","createTime":1579479640000,"id":"7907393098192322560","identifier":"DL20200120APVBY","mobile":"13905821007","name":"安吉金翔通讯设备有限公司","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582599604000,"id":"fe57b6a8b3fc47e0bb3100133826ffeb","identifier":"DL202002254SVAL","mobile":"18812340001","name":"全国-18812340001-0001","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1586593906000,"id":"d3d4d680e6654cee94c8b49155d3e1af","identifier":"DL20200411B8PGD","mobile":"17734561113","name":"zhehs一个测试公司0002","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582512373000,"id":"b247e02ae90c472fb67f1e3a36eb8754","identifier":"DL20200224EQVLO","mobile":"18833335551","name":"泰隆测试代理商","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"浙江省杭州市全市","businessCityName":"杭州市","businessCountyName":"全市","businessProvinceName":"浙江省","createTime":1579485286000,"id":"a7fd504eed1c4006affd044ddee2b1e7","identifier":"DL20200120F9Q5W","mobile":"13211112222","name":"代理商13111112222-浙江杭州","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1579485153000,"id":"a3b9589374c94199a8f7694344ca17bd","identifier":"DL20200120GGAAW","mobile":"13111112222","name":"代理商13111112222-全国","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1588929027000,"id":"9f4218eeb3f44cf29aabbb3195c09013","identifier":"DL20200508FM9KK","mobile":"13116786008","name":"测试的代理商","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1584080420000,"id":"95b2170cb1c84e8dbbd12548b60422a9","identifier":"DL20200313UKIKN","manager":"111","mobile":"13320024410","name":"泰隆-冰激凌-13320024410","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2},{"address":"浙江省杭州市上城区","businessCityName":"杭州市","businessCountyName":"上城区","businessProvinceName":"浙江省","createTime":1573719436000,"id":"952f6a6cced94007b9cf557bf01a3520","identifier":"DL20191114INJPR","mobile":"13111112000","name":"代理商13111112222","pageNum":0,"pageSize":10,"status":1,"type":2},{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1582705464000,"id":"8dde35e209a54fb18549bba95f42e072","identifier":"DL20200226192FI","mobile":"18874112222","name":"asd","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2}],"navigateFirstPage":1,"navigateLastPage":3,"navigatePages":8,"navigatepageNums":[1,2,3],"nextPage":2,"pageNum":1,"pageSize":10,"pages":3,"prePage":0,"size":10,"startRow":1,"total":28},"message":"请求成功","statusCode":"2000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+67ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>name杭州乐木几method:com.lemuji.auths.organAgencyAuditService.list,pageNumber:1,pageSize:10statusnull</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":{"endRow":1,"hasNextPage":false,"hasPreviousPage":false,"isFirstPage":true,"isLastPage":true,"list":[{"address":"全国全省全市","businessCityName":"全省","businessCountyName":"全市","businessProvinceName":"全国","createTime":1579488842000,"id":"2345f9811acb4823be8118f1c298330a","identifier":"DL20200120KGQGX","mobile":"15800000000","name":"杭州乐木几","pageNum":0,"pageSize":10,"payType":"","status":1,"type":2}],"navigateFirstPage":1,"navigateLastPage":1,"navigatePages":8,"navigatepageNums":[1],"nextPage":0,"pageNum":1,"pageSize":10,"pages":1,"prePage":0,"size":1,"startRow":1,"total":1},"message":"请求成功","statusCode":"2000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+52ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namemethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:哈哈,pageSize:10status6</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":"","message":"Can not set int field com.lemuji.common.pojo.PageDto.pageNumber to null value","statusCode":"3000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+56ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namemethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:1,pageSize:哈哈status</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":"","message":"Can not set int field com.lemuji.common.pojo.PageDto.pageSize to null value","statusCode":"3000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+80ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namemethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:,pageSize:10status</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":"","message":"Can not set int field com.lemuji.common.pojo.PageDto.pageNumber to null value","statusCode":"3000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+54ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namemethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:1,pageSize:status</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":"","message":"Can not set int field com.lemuji.common.pojo.PageDto.pageSize to null value","statusCode":"3000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>organAgencyAuditService---null</span>
+						<span class='test-time'>May 12, 2020 04:06:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 12, 2020 04:06:23 PM</span>
+	<span class='label end-time'>May 12, 2020 04:06:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+55ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>namemethod:com.lemuji.auths.organAgencyAuditService.list,pageNumber:5,pageSize:10status</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>响应结果： {"data":{"endRow":0,"hasNextPage":false,"hasPreviousPage":true,"isFirstPage":false,"isLastPage":false,"list":[],"navigateFirstPage":1,"navigateLastPage":3,"navigatePages":8,"navigatepageNums":[1,2,3],"nextPage":0,"pageNum":5,"pageSize":10,"pages":3,"prePage":4,"size":0,"startRow":0,"total":30},"message":"请求成功","statusCode":"2000","token":"98f5fb67ec511b4a1f4d11aad11a45c527710cb019e1e63bb42cffae2e586b11"}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:06:23 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 12, 2020 04:06:22 PM</td>
+                                                        <td class='linked' test-id='1'>organAgencyAuditService---null</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [3000] but found [2000]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.course.lemuji.YyScript.organAgencyAuditService(YyScript.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 12, 2020 04:06:22 PM</td>
+                                                        <td class='linked' test-id='2'>organAgencyAuditService---null</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [3000] but found [2000]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.course.lemuji.YyScript.organAgencyAuditService(YyScript.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>11</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>11</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>May 12, 2020 04:06:22 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>May 12, 2020 04:06:22 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>57ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 9,
+				failParent: 2,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 2,
+				
+				passChild: 9,
+				failChild: 2,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 24,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='http://extentreports.com/resx/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+	</body>
+	
+</html>
