@@ -1,0 +1,24 @@
+[DEBUG] 2020-05-14 17:13:43 [main] com.course.dao.TemDao.findAll - ==>  Preparing: select * from tem 
+[DEBUG] 2020-05-14 17:13:43 [main] com.course.dao.TemDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-14 17:13:43 [main] com.course.dao.TemDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-14 17:13:43 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-14 17:13:43 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-14 17:13:43 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.TemDao.findAll - ==>  Preparing: select * from tem 
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.TemDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.TemDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.ZbbDao.test1 - ==>  Preparing: select * from haha where id = ?; 
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.ZbbDao.test1 - ==> Parameters: 1(Integer)
+[DEBUG] 2020-05-14 17:22:41 [main] com.course.dao.ZbbDao.test1 - <==      Total: 1
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.TemDao.findAll - ==>  Preparing: select * from tem 
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.TemDao.findAll - ==> Parameters: 
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.TemDao.findAll - <==      Total: 4
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.TemDao.temUser - ==>  Preparing: SELECT u.*,t.card ,t.id tid from tem t,user u where t.id=u.id 
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.TemDao.temUser - ==> Parameters: 
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.TemDao.temUser - <==      Total: 4
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.ZbbDao.test1 - ==>  Preparing: select * from haha where id = ?; 
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.ZbbDao.test1 - ==> Parameters: 1(Integer)
+[DEBUG] 2020-05-14 17:25:04 [main] com.course.dao.ZbbDao.test1 - <==      Total: 1

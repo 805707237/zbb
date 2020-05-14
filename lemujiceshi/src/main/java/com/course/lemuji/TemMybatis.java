@@ -2,6 +2,8 @@ package com.course.lemuji;
 
 import com.course.dao.TemDao;
 import com.course.dao.UserDao;
+import com.course.dao.ZbbDao;
+import com.course.model.sql.Haha;
 import com.course.model.sql.Tem;
 import com.course.model.sql.User;
 import org.apache.ibatis.io.Resources;
@@ -25,6 +27,10 @@ public class TemMybatis {
     private static Logger log = LoggerFactory.getLogger(yyScript.class);
     private TemDao temDao;
     private UserDao userDao;
+
+    private InputStream in1;
+    private SqlSession sqlsession1;
+    private ZbbDao zbbDao;
     /**
      * 链接数据库
      * 测试开始前执行
@@ -41,6 +47,14 @@ public class TemMybatis {
         //4.使用SqlSession创建Dao接口的代理对象
         temDao=sqlsession.getMapper(TemDao.class);
         userDao=sqlsession.getMapper(UserDao.class);
+
+        in1= Resources.getResourceAsStream("config1.xml");
+        //2.创建SqlSessionFactory对象
+        SqlSessionFactoryBuilder builder1=new SqlSessionFactoryBuilder();
+        SqlSessionFactory factory1=builder1.build(in1);
+        //3.使用工厂生产SqlSession对象 参数加上true自动提交事务
+        sqlsession1=factory1.openSession();
+        zbbDao=sqlsession1.getMapper(ZbbDao.class);
     }
     /**
      * 释放资源
@@ -69,6 +83,12 @@ public class TemMybatis {
             System.out.println(t);
             System.out.println(t.getUser());
         }
+    }
+
+    @Test
+    public void test(){
+        Haha haha=zbbDao.test1(1);
+        System.out.println(haha.toString());
     }
 //    /**多表查询，一对多查询**/
 //    @Test

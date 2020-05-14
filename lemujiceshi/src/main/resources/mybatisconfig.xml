@@ -23,19 +23,6 @@
         </environment>
     </environments>
 
-<!--    <environments default="mysql">-->
-<!--        <environment id="mysql">-->
-<!--            <transactionManager type="JDBC"/>-->
-<!--            &lt;!&ndash; 配置链接池 &ndash;&gt;-->
-<!--            <dataSource type="POOLED">-->
-<!--                <property name="driver" value="com.mysql.jdbc.Driver" />-->
-<!--                <property name="url" value="jdbc:mysql://localhost:3306/sys" />-->
-<!--                <property name="username" value="root" />-->
-<!--                <property name="password" value="zbb2133778" />-->
-<!--            </dataSource>-->
-<!--        </environment>-->
-<!--    </environments>-->
-
     <!-- mapping文件路径配置 -->
     <mappers>
         <mapper resource="com/sql/dao/UsersDao.xml"/>
@@ -44,17 +31,3 @@
 
 
 </configuration>
-
-
-<!--<?xml version="1.0" encoding="UTF-8" ?>-->
-<!--<!DOCTYPE configuration-->
-<!--        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"-->
-<!--        "http://mybatis.org/dtd/mybatis-3-config.dtd">-->
-<!--<configuration>-->
-<!--<typeAliases>-->
-<!--    <package name="com.course.model"/>-->
-<!--</typeAliases>-->
-<!--<mappers>-->
-<!--    <mapper resource="mapper/mysql.xml"/>-->
-<!--</mappers>-->
-<!--</configuration>-->

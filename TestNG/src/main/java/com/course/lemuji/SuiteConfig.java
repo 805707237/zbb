@@ -36,8 +36,6 @@ public class SuiteConfig {
      * 链接数据库
      * 测试开始前执行
      * */
-
-
     @BeforeSuite
     public void mybatis() throws IOException {
         /**链接mybatis**/

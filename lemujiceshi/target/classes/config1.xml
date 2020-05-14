@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-        <!DOCTYPE configuration
-                PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-                "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
 
@@ -12,21 +12,20 @@
             <!-- 配置链接池 -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://localhost:3306/zbb" />
+                <property name="url" value="jdbc:mysql://localhost:3306/sys" />
                 <property name="username" value="root" />
                 <property name="password" value="zbb2133778" />
 
-<!--                <property name="url" value="jdbc:mysql://202.91.251.165:33061/auths" />-->
-<!--                <property name="username" value="root" />-->
-<!--                <property name="password" value="lmi@2019!@" />-->
+                <!--                <property name="url" value="jdbc:mysql://202.91.251.165:33061/auths" />-->
+                <!--                <property name="username" value="root" />-->
+                <!--                <property name="password" value="lmi@2019!@" />-->
             </dataSource>
         </environment>
     </environments>
 
     <!-- mapping文件路径配置 -->
     <mappers>
-        <mapper resource="com/sql/dao/UsersDao.xml"/>
-        <mapper resource="com/sql/dao/TemDao.xml"/>
+        <mapper resource="com/sql/dao/Zbb.xml"/>
     </mappers>
 
 

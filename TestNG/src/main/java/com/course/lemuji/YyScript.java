@@ -15,15 +15,14 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
-
 public class YyScript {
     /**代理商入住审核列表参数**/
     @DataProvider(name="yyq1")
     public  Object[][] parameter(){
         Object[][] result=new Object[][]{
-                {"杭州乐木几","1","10","1","2000"},
+                {"杭州","1","10","1","2000"},
                 {null,"1","10","1","2000"},
-                {"杭州乐木几","1","10",null,"2000"},
+                {"杭州","1","10",null,"2000"},
                 {"","哈哈","10","6","3000"},
                 {"","1","哈哈","","3000"},
                 {"","","10","","3000"},
